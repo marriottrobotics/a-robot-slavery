@@ -11,6 +11,9 @@
  */
 
 #include "main.h"
+#include <API.h>
+
+int imes;
 
 /*
  * Runs pre-initialization code. This function will be started in kernel mode one time while the
@@ -37,4 +40,5 @@ void initializeIO() {
  * can be implemented in this task if desired.
  */
 void initialize() {
+   imes = imeInitializeAll();
 }

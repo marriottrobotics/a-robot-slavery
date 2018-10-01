@@ -45,6 +45,8 @@ extern "C" {
 #define CATIPULT(speed) motorSet(4, speed)
 #define GRABBER(speed) motorSet(3, speed)
 
+extern int imes;
+
 // Prototypes for initialization, operator control and autonomous
 
 /**

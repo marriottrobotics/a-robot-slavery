@@ -31,6 +31,7 @@
  */
  int shift = 1; // divide
 void operatorControl() {
+  printf("Initalized %d imes.", imes);
 	while (1) {
 		//Shift
 			if(joystickGetDigital(1, 7, JOY_LEFT) || joystickGetDigital(1, 7, JOY_RIGHT)){
@@ -76,7 +77,7 @@ void operatorControl() {
 				if(joystickGetDigital(1, 7, JOY_UP)){
 					GRABBER(127/shift);
 				}else if(joystickGetDigital(1, 7, JOY_DOWN)){
-					GRABBER(-127/3/shift);
+					GRABBER(-127/2/shift);
 				}else{
 					GRABBER(0);
 				}
